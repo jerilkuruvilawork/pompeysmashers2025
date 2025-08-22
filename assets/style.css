@@ -1,0 +1,488 @@
+.sponsors-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.sponsor-tile {
+    background: #e0f7fa;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0, 131, 143, 0.10);
+    padding: 1.2rem 1rem 1rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.sponsor-tile:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0, 131, 143, 0.18);
+}
+.sponsor-tile .sponsor-name {
+    font-weight: 700;
+    color: #00838f;
+    font-size: 1.15rem;
+    margin-bottom: 0.5em;
+}
+.sponsor-tile .sponsor-type {
+    font-size: 1em;
+    color: #1565c0;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    /* Larger sponsor logo */
+    .sponsor-tile img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        margin-bottom: 0.7em;
+    }
+}
+.page-title {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    color: #1565c0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.page-title .block {
+    display: block;
+}
+.contacts-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.contact-tile {
+    background: #e3f0ff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(21, 101, 192, 0.10);
+    padding: 1.2rem 1rem 1rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.contact-tile:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(21, 101, 192, 0.18);
+}
+.contact-tile .label {
+    font-weight: 700;
+    color: #1565c0;
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+}
+.contact-tile a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: 500;
+    background: #ffd60022;
+    padding: 0.4em 1em;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 1.08rem;
+    margin-top: 0.5em;
+}
+.contact-tile a:hover {
+    background: #ffd600;
+    color: #1565c0;
+    text-decoration: underline;
+}
+.contact-tile .icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center center;
+    background-size: contain;
+    margin-right: 0.2em;
+}
+.prizes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.prize-card {
+    background: linear-gradient(135deg, #e0f7fa 60%, #e3f0ff 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 131, 143, 0.12);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    position: relative;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.prize-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(21, 101, 192, 0.18);
+}
+.prize-icon {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+.prize-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #00838f;
+    margin-bottom: 0.3em;
+}
+.prize-amount {
+    font-size: 1.15em;
+    color: #00838f;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    display: block;
+}
+.prize-sponsor {
+    font-size: 1em;
+    color: #00838f;
+    background: #e0f7fa;
+    border-radius: 6px;
+    padding: 0.2em 0.7em;
+    margin-top: 0.7em;
+    font-style: italic;
+    display: inline-block;
+}
+.prizes-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+.prizes-list li {
+    font-size: 1.18rem;
+    margin-bottom: 0.7rem;
+    color: #00838f;
+    font-weight: 500;
+    background: #e0f7fa;
+    border-radius: 12px;
+    padding: 1em 1.5em 1em 3em;
+    box-shadow: 0 2px 8px rgba(0, 131, 143, 0.10);
+    position: relative;
+}
+.prizes-list li::before {
+    content: "🏆";
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    font-size: 1.5em;
+    color: #00838f;
+}
+.prizes-list li:nth-child(1)::before {
+    content: "🥇";
+}
+.prizes-list li:nth-child(2)::before {
+    content: "🥈";
+}
+.prizes-list li:nth-child(3)::before {
+    content: "🥉";
+}
+.prizes-list strong {
+    color: #00838f;
+    font-weight: 700;
+    margin-right: 0.5em;
+    font-size: 1.1em;
+}
+.prizes-list .sponsor {
+    display: block;
+    font-size: 0.98rem;
+    color: #00838f;
+    font-weight: 400;
+    margin-top: 0.2em;
+    margin-left: 1em;
+    font-style: italic;
+    background: #e0f7fa;
+    border-radius: 6px;
+    padding: 0.2em 0.7em;
+    width: fit-content;
+}
+.prizes-list .sponsor {
+    display: block;
+    font-size: 0.98rem;
+    color: #1565c0;
+    font-weight: 400;
+    margin-top: 0.2em;
+    margin-left: 1em;
+    font-style: italic;
+}
+.sponsors-section {
+    margin-top: 2rem;
+}
+.sponsors-section h3 {
+    color: #1565c0;
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+    margin-top: 1.5rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.sponsors-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2em;
+}
+.sponsors-list li {
+    background: #e3f0ff;
+    color: #1565c0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    padding: 0.7em 1.2em;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.08);
+    margin-bottom: 0.5em;
+}
+.sponsors-list.main li {
+    background: #e0f7fa;
+    color: #00838f;
+    border: 2px solid #00838f;
+}
+.sponsors-list.associate li {
+    background: #e0f7fa;
+    color: #00838f;
+    border: 2px solid #00838f;
+}
+.prizes-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0 0 0;
+}
+.prizes-list li {
+    font-size: 1.15rem;
+    margin-bottom: 0.7rem;
+    color: #1565c0;
+    font-weight: 500;
+    background: #fffbe6;
+    border-radius: 8px;
+    padding: 0.7em 1.2em;
+    box-shadow: 0 2px 8px rgba(255, 214, 0, 0.08);
+}
+.prizes-list strong {
+    color: #ffd600;
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+.register-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #1565c0 60%, #ffd600 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0.8em 2em;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 1.2em 0 1.5em 0;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.10);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.register-btn:hover {
+    background: #00838f;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(21, 101, 192, 0.18);
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f0ff 0%, #fffbe6 100%);
+    min-height: 100vh;
+}
+
+.hero {
+    background: linear-gradient(90deg, #1565c0 60%, #ffd600 100%);
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.hero-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.12);
+    border: 3px solid #ffd600;
+}
+.hero h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 1px 1px 8px #1565c0;
+}
+nav {
+    margin-top: 0.5rem;
+}
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    background: #1565c0;
+    padding: 0.3em 1em;
+    border-radius: 6px;
+}
+nav a:hover {
+    color: #ffd600;
+    background: #fff;
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem 1rem 4rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    padding: 2rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+.card h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #1565c0;
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+.info-grid {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+.info-item {
+    background: #e3f0ff;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.06);
+}
+.label {
+    display: block;
+    font-weight: 500;
+    color: #1565c0;
+    margin-bottom: 0.25rem;
+    font-size: 1.05rem;
+}
+.value {
+    font-size: 1.2rem;
+    color: #222;
+    font-weight: 500;
+}
+.directions, .contacts, .bank-details {
+    margin-bottom: 1.2rem;
+}
+.directions a {
+    color: #1565c0;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-right: 0.5rem;
+}
+/* Improved Contact Section Alignment */
+.contacts {
+    background: #e3f0ff;
+    border-radius: 16px;
+    padding: 2rem 2rem 1.5rem 2rem;
+    box-shadow: 0 2px 12px rgba(21, 101, 192, 0.10);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contacts ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0 0 0;
+}
+.contacts li {
+    margin-bottom: 1.2rem;
+    font-size: 1.12rem;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: flex-start;
+}
+.contacts .label {
+    min-width: 90px;
+    font-weight: 600;
+    color: #1565c0;
+    text-align: right;
+}
+.contacts a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: 500;
+    background: #ffd60022;
+    padding: 0.3em 1em;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 1.08rem;
+}
+.contacts a:hover {
+    background: #ffd600;
+    color: #1565c0;
+    text-decoration: underline;
+}
+.contacts .icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg') no-repeat center center;
+    background-size: contain;
+    margin-right: 0.2em;
+}
+.bank-details {
+    background: #e0f7fa;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(255, 214, 0, 0.06);
+}
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
